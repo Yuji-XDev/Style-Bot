@@ -84,38 +84,37 @@ export async function before(m, { conn, participants, groupMetadata }) {
   ) groupSize--;
 
   if (chat?.welcome && m.messageStubType == 27) {
-    let bienvenida = `⌬ ──[ 𝙉𝙐𝙀𝙑𝙊 𝙉𝙊𝘿𝙊 𝘾𝙊𝙉𝙀𝘾𝙏𝘼𝘿𝙊 ]── ⌬
-
-╭╼⃝🌸✦ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑵𝒚𝒂~ ✦🌸╾⃝╮
+    let bienvenida = `
+╭─❍🌺❖ 𝙃𝙤𝙡𝙖, 𝙃𝙤𝙡𝙖~ ❖🌺❍─╮
 ┃
-┃ 🐾 *Nᴜᴇᴠ@:* @${numeroUsuario}
-┃ 🎀 *𝙐𝙨𝙚𝙧𝙨 𝙘𝙤𝙣𝙚𝙘𝙩𝙖𝙙𝙤𝙨:* ${groupSize}
-┃ 🗺️ *𝙇𝙤𝙘𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤́𝙣:* ${pais}
-┃ 📆 *𝙏𝙞𝙢𝙚𝙨𝙩𝙖𝙢𝙥:* ${fecha} • ${hora}
-┃ 🏰 *𝙂𝙧𝙪𝙥𝙤 𝙙𝙚 𝙙𝙚𝙨𝙥𝙡𝙞𝙚𝙜𝙪𝙚:* ${groupMetadata.subject}
+┃ 💖 *Nᴇᴡ ᴍᴇᴍʙᴇʀ:* @${numeroUsuario}
+┃ 🧸 *𝘾𝙤𝙣𝙚𝙘𝙩𝙖𝙙𝙤𝙨:* ${groupSize}
+┃ 🌐 *𝙋𝙖𝙞́𝙨:* ${pais}
+┃ 🕰️ *𝙁𝙚𝙘𝙝𝙖 & 𝙃𝙤𝙧𝙖:* ${fecha} • ${hora}
+┃ 🏡 *𝙂𝙧𝙪𝙥𝙞𝙩𝙤:* ${groupMetadata.subject}
 ┃
-╰━･ﾟ✧*:･ﾟ✿🌸✧ﾟ･:✿･ﾟ✧━╯
+╰───────๑ஓ๑───────╯
 
-💌 *¡Bienvenid@! Siéntete como en casa~*
-> 🛠 \`\`\`ᴜsᴀ #ᴍᴇɴᴜ ᴘᴀʀᴀ ᴠᴇʀ ʟᴏs ᴄᴏᴍᴀɴᴅᴏs ᴅɪsᴘᴏɴɪʙʟᴇs.\`\`\``;
+🎊 *¡𝙀𝙨 𝙪𝙣 𝙥𝙡𝙖𝙘𝙚𝙧 𝙧𝙚𝙘𝙞𝙗𝙞𝙧𝙩𝙚!*
+🌸 Usa \`\`\`${usedPrefix}menu\`\`\` para descubrir todas las funciones 🍭`;
 
     await conn.sendMini(m.chat, txt, dev, bienvenida, img, img, redes, fkontak);
   }
 
   if (chat?.welcome && (m.messageStubType == 28 || m.messageStubType == 32)) {
-    let bye = `╭─⃟🌹❖ 𝐇𝐀𝐒𝐓𝐀 𝐏𝐑𝐎𝐍𝐓𝐎 ❖🌹⃟─╮
+    let bye = `╭══🎐༄ 𝘼𝘿𝙄𝙊́𝙎 𝙔 𝘽𝙐𝙀𝙉 𝙑𝙄𝘼𝙅𝙀 ༄🎐══╮
 ┃
-┃ 💔 *Se ha ido:* @${numeroUsuario}
-┃ 👥 *Miembros restantes:* ${groupSize}
-┃ 🌐 *País:* ${pais}
-┃ 🗓️ *Fecha:* ${fecha}
-┃ 🕰️ *Hora Peru:* ${hora}
-┃ 🏡 *Grupo:* ${groupMetadata.subject}
+┃ 🌪️ *𝘼𝙙𝙞𝙤́𝙨 𝙖:* @${numeroUsuario}
+┃ 👣 *𝙌𝙪𝙚𝙙𝙖𝙢𝙤𝙨:* ${groupSize}
+┃ 🧭 *𝙍𝙪𝙢𝙗𝙤:* ${pais}
+┃ 📅 *𝘿𝙞́𝙖:* ${fecha}
+┃ ⏰ *𝙃𝙤𝙧𝙖:* ${hora}
+┃ 🏘️ *𝘿𝙚𝙨𝙙𝙚:* ${groupMetadata.subject}
 ┃
-╰─────────────✦
+╰═══◉◉◉═════❖
 
-🕊️ *Que los vientos te lleven a nuevos destinos...*
-> 🛠 \`\`\`ᴜsᴀ #ᴍᴇɴᴜ ᴘᴀʀᴀ ᴠᴇʀ ʟᴏs ᴄᴏᴍᴀɴᴅᴏs ᴅɪsᴘᴏɴɪʙʟᴇs.\`\`\``;
+🌌 *Cada adiós es un nuevo comienzo...*
+📜 Usa \`\`\`${usedPrefix}menu\`\`\` para explorar el mundo del bot 🌟`;
 
     await conn.sendMini(m.chat, txt1, dev, bye, img, img, redes, fkontak);
   }

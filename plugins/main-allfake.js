@@ -29,15 +29,15 @@ console.log(`Error : ${e}`)
   
 global.creador = 'wa.me/51969214380'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
-global.namechannel = '=͟͟͞Sukuna bot • 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⌺'
-global.namechannel2 = '=͟͟͞Sukuna bot • 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⌺'
-global.namegrupo = '=͟͟͞Sukuna bot • 𝒐𝒇𝒊𝒄𝒊𝒂𝒍 ⌺'
-global.namecomu = '=͟͟͞Sukuna bot • 𝑪𝒐𝒎𝒖𝒏𝒊𝒕𝒚 ˟꘏꙳'
-global.listo = '*🌴 ＡＱＵＩ - ＴＩＥＮＥＳ ＭＥＮ*'
+global.namechannel = '=͟͟͞Style-Bot • 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⌺'
+global.namechannel2 = '=͟͟͞Style-Bot • 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⌺'
+global.namegrupo = '=͟͟͞Style-Bot • 𝒐𝒇𝒊𝒄𝒊𝒂𝒍 ⌺'
+global.namecomu = '=͟͟͞Style-Bot • 𝑪𝒐𝒎𝒖𝒏𝒊𝒕𝒚 ˟꘏꙳'
+global.listo = '*🌴 aqui tienes*'
 global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://files.catbox.moe/vm6opf.jpg')
 
 global.canalIdM = ["120363401008003732@newsletter", "120363401008003732@newsletter"]
-global.canalNombreM = ["  ꙰⃟🎄  ⸸𝕊𝖚𝖐𝖚𝖓𝖆 𝑼𝒍𝒕𝒓𝒂 𝑴𝑫⸸  🎋★꙰⃟⸙", "🐉꙰⃟ 𖠺 SUKUNA ULTRA - 𝐌𝐃 𖠺🌴⃟ᰳᰬᰶ"]
+global.canalNombreM = ["  ꙰⃟✨ ⸸ 𝑺𝒕𝒚𝒍𝒆 𝑩𝒐𝒕 - 𝑼𝒍𝒕𝒓𝒂 ⸸ 🌙꙰⃟⚜️", "🌀꙰⃟ 𖤐 𝙎𝙏𝙔𝙇𝙀 𝘽𝙊𝙏 ∞ 𝐌𝐃 𖤐🎨⃟"]
 global.channelRD = await getRandomChannel()
 
 global.d = new Date(new Date + 3600000)
@@ -70,7 +70,7 @@ global.waitttt = '✧͢☁️ 𝐏𝐑𝐎𝐂𝐄𝐒𝐀𝐍𝐃𝐎...⚙️�
 var canal = 'https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U'  
 var comunidad = 'https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U'
 var git = 'https://github.com/Yuji-XDev'
-var github = 'https://github.com/Yuji-XDev/SukunaBot-V2'
+var github = 'https://github.com/Yuji-XDev/Style-Bot'
 var tiktok = 'https://tiktok.com/@the.black.xz'
 let correo = 'blackoficial2025@gmail.com'
 global.redes = [canal, comunidad, git, github, tiktok, correo].getRandom()

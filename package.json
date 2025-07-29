@@ -1,5 +1,5 @@
 {
-  "name": "SukunaUltra-MD",
+  "name": "Style-Bot",
   "version": "2.2.6",
   "description": "WhatsApp Bot Multi Device",
   "main": "index.js",
@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/Yuji-XDev/SukunaUltra-MD",
+  "homepage": "https://github.com/Yuji-XDev/Style-Bot",
   "author": {
     "name": "Dev-Shadow"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yuji-XDev/SukunaUltra-MD.git"
+    "url": "git+https://github.com/Yuji-XDev/Style-Bot.git"
   },
   "bugs": {
-    "url": "https://github.com/Yuji-XDev/SukunaUltra-MD/issues"
+    "url": "https://github.com/Yuji-XDev/Style-Bot/issues"
   },
   "license": "MIT-License",
   "dependencies": {

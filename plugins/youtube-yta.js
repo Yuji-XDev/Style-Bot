@@ -75,8 +75,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 };
 
-handler.command = ['yta'];
-handler.help = ['yta <url o texto>'];
+handler.command = ['ytmp3'];
+handler.help = ['ytmp3 <url o texto>'];
 handler.tags = ['downloader'];
 
 export default handler;

@@ -3,9 +3,9 @@ import PhoneNumber from 'awesome-phonenumber';
 
 const handler = async (m, { conn }) => {
   const name = '𝙎𝙝𝙖𝙙𝙤𝙬 - 𝘾𝙧𝙚𝙖𝙙𝙤𝙧 👑';
-  const numCreador = '51988013368';
+  const numCreador = '549117641-6825';
   const empresa = 'Sukuna Bot Inc.';
-  const about = '🤖 Desarrollador de Sukuna Ultra - MD';
+  const about = '🤖 Desarrollador de Style Bot';
   const correo = 'blackoficial2025@gmail.com';
   const web = 'https://gituhb.com/Yuji-XDev';
   const direccion = 'Tokyo, Japón 🇯🇵';

@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
     }
 
     if (stderr) {
-      console.warn('Advertencia durante la actualización:', stderr);
+      console.warn('Advertencia durante la actualizacion:', stderr);
     }
 
     if (stdout.includes('Already up to date.')) {

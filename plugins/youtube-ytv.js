@@ -29,8 +29,8 @@ conn.sendFile(m.chat, await (await fetch(json.url)).buffer(), `${json.title}.mp4
   }
 };
 
-handler.help = ['ytv'];
-handler.command = ['ytv'];
+handler.help = ['ytmp4'];
+handler.command = ['ytmp4'];
 handler.tags = ['dl'];
 
 export default handler;

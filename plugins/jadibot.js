@@ -38,7 +38,7 @@ let handler = async (m, { conn }) => {
 
   const lista = subbotsUnicos.map((bot, i) => {
     return `╭➤ Sσƈƙꫀƚ #${i + 1} 𓆩🌳𓆪
-│⤿ 🧪 \`Usuario:\` ${bot.user?.name || '𝚂𝚄𝙱 𝙱𝙾𝚃 𝚂𝚄𝙺𝚄𝙽𝙰'}
+│⤿ 🧪 \`Usuario:\` ${bot.user?.name || '𝚂𝚄𝙱 𝙱𝙾𝚃 𝐒𝐓𝐘𝐋𝐄'}
 │⤿ 🏮 \`Link:\` wa.me/${(bot.user?.jid || '').replace(/[^0-9]/g, '')}
 │⤿ 🍯 \`En linea:\` ${bot.uptime ? convertirMsADiasHorasMinutosSegundos(Date.now() - bot.uptime) : '𝘿𝙚𝙨𝙘𝙤𝙣𝙤𝙘𝙞𝙙𝙤'}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈꒱`;
@@ -46,7 +46,7 @@ let handler = async (m, { conn }) => {
 
   const textoSubbots = totalSubs === 0
     ? '𝙉𝙤 𝙝𝙖𝙮 𝙎𝙪𝙗-𝘽𝙤𝙩𝙨 𝙖𝙘𝙩𝙞𝙫𝙤𝙨 𝙥𝙤𝙧 𝙖𝙝𝙤𝙧𝙖. 🌙'
-    : `*✦ Sockets Activos de Sukuna Ultra-MD ✦*
+    : `*✦ Sockets Activos de 𝐒𝐓𝐘𝐋𝐄 𝐁𝐎𝐓 ✦*
 
 > ⌛ *Tiempo Activo:* ${uptime}
 > 🎄 *Subs conectados:* ${totalSubs}
@@ -62,8 +62,8 @@ ${lista}
       externalAdReply: {
         title: `🍁 𝐒𝐎𝐂𝐊𝐄𝐓𝐒 𝐂𝐎𝐍𝐄𝐂𝐓𝐀𝐃𝐎𝐒 🏮`,
         body: `🧪 connected: ${totalSubs}`,
-        thumbnailUrl: 'https://files.catbox.moe/zgvj8c.jpg',
-        sourceUrl: 'https://gituhb.com/Yuji-XDev/SukunaBot-V2',
+        thumbnailUrl: 'https://files.catbox.moe/5spi6g.jpg',
+        sourceUrl: 'https://gituhb.com/Yuji-XDev/Style-Bot',
         mediaType: 1,
         renderLargerThumbnail: true,
         showAdAttribution: false
