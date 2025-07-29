@@ -47,25 +47,31 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   global.db.data.users[m.sender].exp += 300
   global.db.data.users[m.sender].joincount += 20
   let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 20)
-let regbot = `✅ VERIFICACIÓN EXITOSA ✅\n\n`
-regbot += `🌾 \`NOMBRE\` » \`\`\`${name}\`\`\`\n`
-regbot += `🌀 \`EDAD\` » \`\`\`${age} años\`\`\`\n`
-regbot += `🕸️ \`FECHA\` » \`\`\`${fecha}\`\`\`\n`
-regbot += `🐋 \`HORA\` » \`\`\`${hora}\`\`\`\n`
-regbot += `🌿 \`DIA\` » \`\`\`${dia}\`\`\`\n\n`
-regbot += `🍹 RECOMPENSAS 🧪\n`
-regbot += `🪙 \`COINS:\` +40\n`
-regbot += `🏮 \`EXP:\` +300\n`
-regbot += `🔰 \`TOKENS:\` +20\n`
-regbot += `> ${club}`
+let regbot = `╭─❍〔 ✅ 𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐂𝐈Ó𝐍 𝐄𝐗𝐈𝐓𝐎𝐒𝐀 ✅ 〕❍─╮\n`;
+regbot += `│\n`;
+regbot += `│ 🌾 *Nombre:* \`\`\`${name}\`\`\`\n`
+regbot += `│ 🌀 *Edad:* \`\`\`${age} años\`\`\`\n`
+regbot += `│ 🕸️ *Fecha:* \`\`\`${fecha}\`\`\`\n`
+regbot += `│ 🕓 *Hora:* \`\`\`${hora}\`\`\`\n`
+regbot += `│ 🌿 *Día:* \`\`\`${dia}\`\`\`\n`
+regbot += `│\n`;
+regbot += `╰─────────────✦\n`
+
+regbot += `╭─❍〔 🎁 𝐑𝐄𝐂𝐎𝐌𝐏𝐄𝐍𝐒𝐀𝐒 〕❍─╮\n`
+regbot += `│ 🪙 *Coins:* +40\n`
+regbot += `│ 🏮 *EXP:* +300\n`
+regbot += `│ 🔰 *Tokens:* +20\n`
+regbot += `╰──────────────────✦\n`
+
+regbot += `✨ *Club:* ${club}`
 await m.react('📩')
 
 await conn.sendMessage(m.chat, {
         text: regbot,
         contextInfo: {
             externalAdReply: {
-                title: 'ּ໋۪֔⛩️⣴ ⵿ּׄ🫧 ⃝̸̶⵿ᩫᰰᮬ 𝐔𝐒𝐔𝐀𝐑𝐈𝐎 𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎🎄᮫๋໋֢᳝ꨪᰰ⃟ુ᭡̵໋࡙',
-                body: ' . ݁ ּ ּ۪ ࣭֔𔓕⃘᜔𑵅᮫ּ߲֧߲۪۪〫֔࠭🌧️ꨩּֽ֪۪۪〫ࣳׄ꩖ּ߲߲֧۪۪߲߲࣪𝐁𝐲: 𓆩𝑺𝒉𝒂֟፝𝑫𝒐𝒘•𝒄𝒐𝒓𝒆𓆪',
+                title: '֔usuario registrado',
+                body: ' 🌾 powered by dev.style',
                 thumbnailUrl: pp,
                 sourceUrl: channel,
                 mediaType: 1,

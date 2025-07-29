@@ -7,7 +7,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let grupos = `╔═════『 🏮 𝐈𝐍𝐕𝐈𝐓𝐀𝐂𝐈𝐎𝐍 』═════╗
 ┃  こんにちは, ${name}! 👋
 ┃  Te invito a unirte a los grupos
-┃  oficiales del *Sukuna Bot* para 
+┃  oficiales del *style Bot* para 
 ┃  convivir con la comunidad 🌸✨
 ╚════════════════════════════╝
 

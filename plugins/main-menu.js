@@ -2,11 +2,6 @@ import axios from 'axios';
 
 let handler = async (m, { conn, args }) => {
   let userId = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.sender;
-  let userData = global.db.data.users[userId] || {};
-  let exp = userData.exp || 0;
-  let coin = userData.coin || 0;
-  let level = userData.level || 0;
-  let role = userData.role || 'Sin Rango';
   let name = await conn.getName(userId);
 
   let _uptime = process.uptime() * 1000;
@@ -68,27 +63,22 @@ let handler = async (m, { conn, args }) => {
   let menuText = `
 🎄 ${ucapan()} @${userId.split('@')[0]}
 
-╔═════ •❖══ 𝕾𝖙𝖞𝖑𝖊 𝕭𝖔𝖙 · 𝐌𝐃 ═❖•════╗
+╔═══ •❖══ 𝕾𝖙𝖞𝖑𝖊 𝕭𝖔𝖙 · 𝐌𝐃 ═❖•══╗
 ┃
-┃ 👤 𝗨𝘀𝘂𝗮𝗿𝗶𝗼: ${name}
-┃ 🧠 𝗡𝗶𝘃𝗲𝗹: ${level}
-┃ ⚡ 𝗘𝑋𝑷: ${exp}
-┃ 🎖️ 𝗥𝗮𝗻𝗴𝗼: ${role}
-┃ 📊 𝗣𝗿𝗼𝗴𝗿𝗲𝘀𝗼: [██████████]
+┃ 🕒 *Hora Perú:* ${hora}
+┃ 📅 *Fecha:* ${fecha}
+┃ 📆 *Día:* ${dia}
 ┃
 ┃ ⚙️ 𝗠𝗼𝗱𝗼: 🔒 *Privado*
-┃ 👑 𝗖𝗿𝗲𝗮𝗱𝗼𝗿: +51969214380
+┃ 👑 𝗖𝗿𝗲𝗮𝗱𝗼𝗿: +54 9 11 7641-6825
 ┃ 🤖 𝗕𝗼𝘁: ${(conn.user.jid == global.conn.user.jid ? '🌟 `BOT OFICIAL`' : '✨ `SUB BOT`')}
 ┃ 🧾 𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀: ${totalCommands}
 ┃ 👥 𝗨𝘀𝘂𝗮𝗿𝗶𝗼𝘀: ${totalreg}
 ┃ ⏳ 𝗨𝗽𝘁𝗶𝗺𝗲: *${uptime}*
 ╚═══❖•══ 𝗙𝗘𝗖𝗛𝗔 & 𝗛𝗢𝗥𝗔 •❖═══╝
-┃ 🕒 *Hora Perú:* ${hora}
-┃ 📅 *Fecha:* ${fecha}
-┃ 📆 *Día:* ${dia}
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━⬣
 
-✨ *Lista de disponibles del* **Style Bot**:
+
+✨ *Lista disponible  de comandos* **Style Bot**:
 
 
 ╭───────────────◆
