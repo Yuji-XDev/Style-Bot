@@ -14,30 +14,27 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
   const mensaje = args.length ? args.join(' ') : '⚠️ *No se proporcionó mensaje.*';
   const grupo = await conn.getName(m.chat);
 
-  const encabezado = `
-╭━━━〔 ⚠️ 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙋𝘼𝙍𝘼 𝙏𝙊𝘿𝙊𝙎 ⚠️ 〕━━⬣
-┃ 💬 *𝙈𝙀𝙉𝙎𝘼𝙅𝙀:* ${mensaje}
-┃ 🧿 *𝙂𝙍𝙐𝙋𝙊:* ${grupo}
-┃ 👥 *𝙈𝙄𝙀𝙈𝘽𝙍𝙊𝙎:* ${participants.length}
-╰━━━━━━━━━━━━━━━━━━⬣`.trim();
-
   let textoFinal = [
-    `╭─〔 ⚡ 𝑺𝑻𝒀𝑳𝑬 𝑩𝑶𝑻 🌳 〕─╮`,
-    `┃ 🔱 𝐋𝐥𝐚𝐦𝐚𝐝𝐨 𝐝𝐞 𝐥𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬…`,
-    `┃`,
-    `┃ 📣 *MENSAJE:*`,
-    `┃ ⤷ ${mensaje}`,
-    `┃`,
-    `┃ 🕷️ *Grupo:* ${grupo}`,
-    `┃ 👥 *Miembros:* ${participants.length}`,
-    `┃━━━━━━━━━━━━━━━━━━⬣`
+    `╭──〔 𓆩 📣 𝐌𝐄𝐍𝐒𝐀𝐉𝐄 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 𓆪 〕──╮`,
+    `│`,
+    `│🌐 *Grupo:* ${grupo}`,
+    `│🧿 *Miembros:* ${participants.length}`,
+    `│🗯️ *Mensaje:*`,
+    `│   ${mensaje}`,
+    `│`,
+    `│⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯`,
+    `│ ⚠️ 𝐍𝐨𝐭𝐢𝐟𝐢𝐜𝐚𝐜𝐢𝐨́𝐧 𝐚:` 
   ];
 
   for (const user of participants) {
-    textoFinal.push(`┃ ✦ @${user.id.split('@')[0]}`);
+    textoFinal.push(`│ ✦ @${user.id.split('@')[0]}`);
   }
 
-  textoFinal.push(`╰⊰━━━━━━⊱⬣\n> ${wm}`);
+  textoFinal.push(
+    `│`,
+    `╰⊰━━━━━━━━━━━━━⊱⬣`,
+    `𓆩 𝐒𝐓𝐘𝐋𝐄 𝐁𝐎𝐓 — 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐓𝐇𝐄 𝐒𝐇𝐀𝐃𝐎𝐖 𝐂𝐎𝐑𝐄 𓆪`
+  );
 
   await conn.sendMessage(m.chat, {
     text: textoFinal.join('\n'),
@@ -45,7 +42,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
     contextInfo: {
       mentionedJid: participants.map(p => p.id),
       externalAdReply: {
-        title: '✧ 𝙄𝙉𝙑𝙊𝘾𝘼𝙉𝘿𝙊 𝙀𝙎𝙋𝙄𝙍𝙄𝙏𝙐𝙎 ꦿ✧',
+        title: '✧ 𝐈𝐍𝐕𝐎𝐂𝐀𝐍𝐃𝐎 𝐋𝐀𝐒 𝐒𝐎𝐌𝐁𝐑𝐀𝐒 ✧',
         body: club,
         thumbnailUrl: logo,
         mediaType: 1,

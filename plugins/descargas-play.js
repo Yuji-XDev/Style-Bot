@@ -30,13 +30,7 @@ url = url || 'no encontrado'
 author = author || 'no encontrado'
     const vistas = formatViews(views)
     const canal = author.name ? author.name : 'Desconocido'
-    const infoMessage = `≡ 🎄 *\`Titulo:\`* ${title || 'Desconocido'}
-
-≡ 🌵 *\`Duración:\`* ${timestamp || 'Desconocido'}
-≡ 🌿 *\`Canal:\`* ${canal}
-≡ 🍁 *\`Vistas:\`* ${vistas || 'Desconocido'}
-≡ 🌳 *\`Publicado:\`* ${ago || 'Desconocido'}
-≡ 🔗 *\`Link:\`* ${url}`
+    const infoMessage = `「✦」Descargando *<${title || 'Desconocido'}>*\n\n> ✧ Canal » *${canal}*\n> ✰ Vistas » *${vistas || 'Desconocido'}*\n> ⴵ Duración » *${timestamp || 'Desconocido'}*\n> ✐ Publicado » *${ago || 'Desconocido'}*\n> 🜸 Link » ${url} `
     const thumb = (await conn.getFile(thumbnail))?.data
     const JT = {
       contextInfo: {

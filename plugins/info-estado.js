@@ -13,20 +13,22 @@ let old = performance.now()
 let neww = performance.now()
 let speed = neww - old
 const used = process.memoryUsage()
-let info = `╭╼✧ 📊 𝐄𝐒𝐓𝐀𝐃𝐎 𝐃𝐄 STYLE ⚙️ ✧\n`
-info += `┃\n`
-info += `├❍ 🌟 *𝐂𝐑𝐄𝐀𝐃𝐎𝐑:* ${etiqueta}\n`
-info += `├❍ 🥥 *𝐏𝐑𝐄𝐅𝐈𝐉𝐎:* [ ${usedPrefix} ]\n`
-info += `├❍ 🌱 *𝐕𝐄𝐑𝐒𝐈𝐎́𝐍:* ${vs}\n`
-info += `├❍ 🔒 *𝐂𝐇𝐀𝐓𝐒 𝐏𝐑𝐈𝐕𝐀𝐃𝐎𝐒:* ${chats.length - groupsIn.length}\n`
-info += `├❍ ⚙️ *𝐂𝐇𝐀𝐓𝐒 𝐓𝐎𝐓𝐀𝐋𝐄𝐒:* ${chats.length}\n`
-info += `├❍ 👻 *𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒:* ${totalreg}\n`
-info += `├❍ 🦠 *𝐆𝐑𝐔𝐏𝐎𝐒:* ${groupsIn.length}\n`
-info += `├❍ ⏱️ *𝐀𝐂𝐓𝐈𝐕𝐈𝐃𝐀𝐃:* ${uptime}\n`
-info += `├❍ 🚀 *𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃:* ${(speed * 1000).toFixed(0) / 1000} s\n`
-info += `├❍ 🤖 *𝐒𝐔𝐁𝐁𝐎𝐓𝐒 𝐀𝐂𝐓𝐈𝐕𝐎𝐒:*\n`
-info += `├➤ 💥 ${totalUsers || '0'}\n`
-info += `╰╼♡✦ 𓆩 STYLE 𓆪 ✦♡`
+let info = `╭─❍〔 ⚙️ 𝐄𝐒𝐓𝐀𝐃𝐎 𝐒𝐈𝐒𝐓𝐄́𝐌𝐈𝐂𝐎 𝐃𝐄 𝐒𝐓𝐘𝐋𝐄 〕❍─╮
+│
+│ 🌟 *Creador:* ${etiqueta}
+│ 🧩 *Prefijo:* [ ${usedPrefix} ]
+│ 🎯 *Versión:* ${vs}
+│
+│ 🔒 *Privados:* ${chats.length - groupsIn.length}
+│ 🧠 *Usuarios:* ${totalreg}
+│ 🏘️ *Grupos:* ${groupsIn.length}
+│ 📊 *Total de chats:* ${chats.length}
+│
+│ ⏱️ *Actividad:* ${uptime}
+│ 🚀 *Velocidad:* ${(speed * 1000).toFixed(0) / 1000} seg
+│ 🤖 *SubBots activos:* ${totalUsers || '0'}
+│
+╰─❍〔 ✦ 𝐒𝐓𝐘𝐋𝐄 𝐒𝐈𝐆𝐔𝐄 𝐄𝐍 𝐒𝐈𝐍𝐓𝐎𝐍𝐈́𝐀 ✦ 〕❍─╯`;
 await conn.sendFile(m.chat, banner, 'estado.jpg', info, fkontak)
 }
 handler.help = ['estado']

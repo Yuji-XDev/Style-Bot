@@ -34,9 +34,9 @@ export async function before(m, { conn }) {
         mentions: [m.sender],
         contextInfo: {
           externalAdReply: {
-            title: 'Dev.Shadow 🇦🇱',
-            body: '🌾◌*̥₊ Sukuna MD ◌❐🎋༉',
-            thumbnailUrl: 'https://files.catbox.moe/mez710.jpg',
+            title: 'Style 🇦🇱',
+            body: '🌾◌*̥₊ style Bot ◌❐🎋༉',
+            thumbnailUrl: 'https://files.catbox.moe/5spi6g.jpg',
             sourceUrl: 'https://github.com/Yuji-XDev',
             mediaType: 1,
             renderLargerThumbnail: true
@@ -53,25 +53,31 @@ export async function before(m, { conn }) {
 
   await m.react('🍰');
   const mensajesNoEncontrado = [
-    `╭─⭑❨ ⚠️ 𝐂𝐨𝐦𝐚𝐧𝐝𝐨 𝐈𝐧𝐯𝐚́𝐥𝐢𝐝𝐨 👾 ❩⭑─╮
-│ 🖍️ El comando *"${command}"* no existe.
-│ 🍰 Usa *${usedPrefix}menu* para ver todos los comandos.
-╰────────────────────────╯`,
+`╭─❍〔 ⚠️ 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐈𝐍𝐕Á𝐋𝐈𝐃𝐎 〕❍─╮
+│ 🚫 El comando *"${command}"* no está registrado.
+│ 🧭 Usa *${usedPrefix}menu* para ver las funciones.
+╰───────────────────────╯`,
 
-    `⭑❨ 💫 𝐂𝐨𝐦𝐚𝐧𝐝𝐨 𝐍𝐨 𝐄𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐝𝐨 ❩⭑
- 🪷 *"${command}"* no está disponible en el sistema.
- 🫧 Revisa el menú con *${usedPrefix}menu*.`,
+`╭─❍〔 🧩 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐃𝐄𝐒𝐂𝐎𝐍𝐎𝐂𝐈𝐃𝐎 〕❍─╮
+│ 💡 *"${command}"* no se encuentra en la base del bot.
+│ 📌 Revisa el menú con *${usedPrefix}menu*.
+╰────────────────────────────╯`,
 
-    `⭑❨ 🐰 𝐄𝐫𝐫𝐨𝐫 𝐝𝐞 𝐂𝐨𝐦𝐚𝐧𝐝𝐨 🌴 ❩⭑
-> 🌾 El comando *"${command}"* no forma parte del bot.
-> 🍰 Usa *${usedPrefix}menu* para orientarte mejor.`,
+`╭─❍〔 🌐 𝐄𝐑𝐑𝐎𝐑 𝐃𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 〕❍─╮
+│ 🪐 El comando *"${command}"* no es válido.
+│ 🎯 Consulta *${usedPrefix}menu* para más info.
+╰────────────────────────────╯`,
 
-    `⭑❨ 🌳 𝐂𝐨𝐦𝐚𝐧𝐝𝐨 𝐃𝐞𝐬𝐜𝐨𝐧𝐨𝐜𝐢𝐝𝐨 🌳 ❩⭑
-> 🧸 No se encontró *"${command}"* en la lista de comandos.
-> 🌳 Consulta el menú con *${usedPrefix}menu*.`,
+`╭─❍〔 💥 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐍𝐎 𝐄𝐍𝐂𝐎𝐍𝐓𝐑𝐀𝐃𝐎 〕❍─╮
+│ 🧸 *"${command}"* no fue reconocido por el sistema.
+│ 📚 Usa *${usedPrefix}menu* para navegar.
+╰────────────────────────────╯`,
 
-    `『⛔』 El comando *${usedPrefix + command}* no existe.\nPara ver la lista de comandos usa:\n» *${usedPrefix}help*`
-  ];
+`╭─❍〔 🛑 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐈𝐍𝐄𝐗𝐈𝐒𝐓𝐄𝐍𝐓𝐄 〕❍─╮
+│ ⛔ *${usedPrefix + command}* no existe.
+│ 📖 Consulta la lista con *${usedPrefix}help*.
+╰────────────────────────────╯`
+];
 
   const mensaje = mensajesNoEncontrado[Math.floor(Math.random() * mensajesNoEncontrado.length)];
 
@@ -80,9 +86,9 @@ export async function before(m, { conn }) {
     mentions: [m.sender],
     contextInfo: {
       externalAdReply: {
-        title: 'Dev.Shadow 🇦🇱',
-        body: '🌾◌*̥₊ 𝑆𝑢𝑘𝑢𝑛𝑎 𝑈𝑙𝑡𝑟𝑎 𝑀𝐷 ◌❐🎋༉',
-        thumbnailUrl: 'https://files.catbox.moe/mez710.jpg',
+        title: 'style 🇦🇱',
+        body: '🌾◌*̥₊ style bot ◌❐🎋༉',
+        thumbnailUrl: 'https://files.catbox.moe/5spi6g.jpg',
         sourceUrl: 'https://github.com/Yuji-XDev',
         mediaType: 1,
         renderLargerThumbnail: true
